@@ -1,0 +1,36 @@
+{
+  "name": "protractor-test",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.ts",
+  "scripts": {
+    "test": "protractor ./config/protractor.conf.js",
+    "postinstall": "webdriver-manager update && tsc",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvyatD/protractor-test.git"
+  },
+  "keywords": [
+    "protractor",
+    "test-project"
+  ],
+  "author": "SvyatD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SvyatD/protractor-test/issues"
+  },
+  "homepage": "https://github.com/SvyatD/protractor-test#readme",
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "@types/jasminewd2": "^2.0.2",
+    "@types/node": "^8.0.7",
+    "jasmine-spec-reporter": "^4.1.1",
+    "typescript": "2.4.2",
+    "@types/async": "^2.0.40"
+  },
+  "dependencies": {
+    "protractor": "^5.1.2"
+  }
+}
