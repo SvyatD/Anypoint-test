@@ -4,7 +4,8 @@ import {SpecReporter} from "jasmine-spec-reporter";
 let conf: Config = {
   directConnect: true,
   specs: [
-      "../specs/*.spec.js"
+      "../specs/*.js",
+      "../specs/**/*.spec.js"
   ],
   onPrepare: () => {
     browser.waitForAngularEnabled(false);
